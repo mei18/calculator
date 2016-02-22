@@ -33,7 +33,7 @@ angular.module('calculator', [])
         	}
         }
 
-		 $scope.changeVal = function changeVal() {
+		 $scope.getVal = function getVal() {
         	if (val == 1) {
         		val = 2;
         	} else if (val == 2) {
@@ -43,22 +43,22 @@ angular.module('calculator', [])
 
       	$scope.opDivide = function opDivide () {
         	$scope.operation = "divi";
-        	$scope.changeVal();
+        	$scope.getVal();
       	}
 
       	$scope.opMultply = function opMultply () {
         	$scope.operation = "mult";
-        	$scope.changeVal();
+        	$scope.getVal();
       	}
 
       	$scope.opAdd = function opAdd () {
         	$scope.operation = 'sum';
-        	$scope.changeVal();
+        	$scope.getVal();
       	}
 
       	$scope.opSubtract = function opSubtract () {
         	$scope.operation = "sub";
-        	$scope.changeVal();
+        	$scope.getVal();
       	}
  
         $scope.equal = function equal() { //imprime result
